@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #424549;
+    min-height:100vh;
+    
+}
+.containerTrailer{
+    color:white;
+    height: 400px;
+    width: auto;
+    background-image:cover;
+}
+.textoAbajo{
+  
+    
+    height: 375px;
+/*     background: linear-gradient(blue, pink);
+ */}

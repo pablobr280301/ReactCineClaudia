@@ -1,0 +1,75 @@
+.hover-scale:hover {
+    transform: scale(1.1); /* Puedes ajustar el valor de escala según tus preferencias */
+    transition: transform 0.3s ease; /* Agrega una transición suave para el efecto */
+  }
+
+  .movie-container {
+    
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-container:hover {
+    transform: scale(1.1);
+  }
+
+.btn-comprar {
+  display: none; /* Ocultar el botón por defecto */
+  position: absolute; /* Posición absoluta para que se superponga al elemento de película */
+  bottom: 40px; /* Espacio desde la parte inferior */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translateX(-50%); /* Centrar horizontalmente */
+  padding: 8px 16px; /* Ajusta el padding según sea necesario */
+  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+}
+.btn-comprar:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color:black;
+}
+
+/* Mostrar el botón al pasar el ratón sobre el elemento de película */
+.mb-3:hover .btn-comprar {
+  display: block;
+}
+
+.trailer{
+  background: linear-gradient(rgba(0, 0, 0, 0.6),40%, rgba(0, 0, 0, 0));
+}
+.botontrailer{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.purchase-form {
+  position: fixed;
+  width:600px;
+  height:auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-info {
+  display: flex;
+}
+
+.movie-poster {
+  height: 370px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.movie-details {
+  flex: 1;
+}
+
+.purchase-actions {
+  margin-top: 20px;
+  text-align: right;
+}
