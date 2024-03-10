@@ -8,6 +8,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import './App.css'; // Este archivo se generará después de compilar el tailwind.css
 import Navbar from './components/Navbar';
 import { useDispatch, useSelector } from 'react-redux';
+import Input from './imagenes/cumple.jpg';
+import Input2 from './imagenes/mayores.png';
+import Input3 from './imagenes/miercoles.jpg';
 
 import { addEntradas, agregarPeliculaFavorita, eliminarPeliculaFavorita } from '../src/redux/userSlice';
 
@@ -132,7 +135,7 @@ function App() {
         <Navbar />
       </div>
 
-      <div className="mx-auto text-center p-4">
+     {/*  <div className="mx-auto text-center p-4">
         <br /> <br />
         <div className='shadow-2xl'>
           <form className="mb-7" onSubmit={searchMovies}>
@@ -144,10 +147,10 @@ function App() {
             />
             <button className="btn btn-primary ml-2 px-4 py-2">Buscar</button>
           </form>
-        </div>
+        </div> */}
 
         <main className='w-full text-white'>
-          {movie ? (
+          {/* {movie ? (
             <div
               className="viewtrailer mx-auto"
               style={{
@@ -194,11 +197,14 @@ function App() {
                 </div>
               )}
             </div>
-          ) : null}
+          ) : null} */}
         </main>
         <br /><br /><br /><br />
+        <p className='text-white text-center text-xl font-extrabold'> PELICULAS QUE ROMPEN LA TAQUILLA</p>
+        <br /><br />
 
-        <div className='px-8  mx-auto'>
+
+        <div className='px-28  mx-auto'>
           <div>
             <Slider {...settings}>
               {movies.map((movie) => (
@@ -220,7 +226,7 @@ function App() {
 
         <br /><br /><br /><br />
 
-        <div className=" mt-3 ">
+        {/*<div className=" mt-3 ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full h-96">
             {movies.map((movie) => (
               <div
@@ -239,7 +245,7 @@ function App() {
             ))}
           </div>
         </div>
-        {showPurchaseForm && (
+         {showPurchaseForm && (
           <div className="purchase-form  ">
             <h2>Confirmar compra</h2>
             <div className="movie-info">
@@ -268,12 +274,87 @@ function App() {
               
             </div>
           </div>
-        )}
+        )} 
 
-        <div className='mb-3' ></div>
+        <div className='mb-3' ></div>*/}
 
-      </div>
+    {/*   </div> */}
     
+    <br />
+    
+    {/* <div className='pb-28 px-8'>
+      jog
+      <table>
+        <td>
+          fsdfdsf
+        </td>
+        <td>
+          fsdfdsf
+        </td>
+      </table>
+    </div> */}
+  
+    <p className='text-white text-center text-xl px-32'>¡Bienvenidos a Petits Pego, el cine que trae la magia del séptimo arte a Córdoba! 🎬✨  <br /><br />
+
+En el corazón de esta hermosa ciudad, emerge nuestro nuevo cine, Petits Pego, donde la emoción y la diversión se unen en una experiencia cinematográfica única. Ubicado en un lugar privilegiado de Córdoba, estamos listos para deleitar a nuestros espectadores con las últimas películas en la mejor calidad de imagen y sonido.
+
+En Petits Pego, nos enorgullece ofrecer una experiencia de cine excepcional para toda la familia. Desde nuestras cómodas y modernas instalaciones hasta nuestro variado programa de proyecciones, cada visita es una aventura emocionante. Además, nuestro compromiso con la seguridad y el bienestar de nuestros clientes garantiza una experiencia tranquila y placentera para todos.
+
+¡Ven y únete a nosotros en Petits Pego para vivir momentos inolvidables en la pantalla grande! 🎥🍿</p>
+     <br /><br /><br /><br /> 
+        <p className='text-white text-center text-xl font-extrabold'> NUESTRAS PROMOCIONES DE CINE</p>
+    <div class="flex flex-col pb-28 px-8">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 px-28">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b ">
+        <table class="min-w-full divide-y ">
+          <thead class="">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+             
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+             
+              </th>
+            </tr>
+          </thead>
+          <tbody class=" divide-y ">
+            
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                
+                <img src={Input} alt="logo" className="h-96 mr-2" /> <br></br>
+                <p className='text-white'>¡Celebra tu cumpleaños en grande con nosotros! <br></br> 
+                Por tan solo 9 euros, disfruta de una entrada al cine <br></br> 
+                 y un delicioso combo de palomitas para hacer de <br></br> 
+                 tu día aún más especial.</p>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                
+                <img src={Input2} alt="logo" className="h-96 mr-2" /> <br></br>
+                <p className='text-white'>¿Eres mayor de 65 años y buscas disfrutar de una <br></br>
+                experiencia cinematográfica sin aglomeraciones? <br></br>
+                ¡Tenemos la promoción perfecta para ti! Únete a <br></br>
+                 nosotros de lunes a jueves y disfruta de tus películas <br></br> favoritas por solo 5 euros.</p>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                
+                <img src={Input3} alt="logo" className="h-96 mr-2" /> <br></br>
+               <p className='text-white'> En el día del espectador tiramos la casa <br></br>por la ventana,
+                puedes venir al cine tan <br></br>solo por 4,50 € la entrada. <br></br> Promoción no válida en festivos.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   </>
   );
 }
